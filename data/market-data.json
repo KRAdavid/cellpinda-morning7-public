@@ -13,6 +13,23 @@
   },
   "limits": ["리뷰 수는 판매량이 아닙니다.", "노출은 시장점유율이 아닙니다.", "공개가격은 실제 납품가격이 아닙니다.", "실제 재구매율과 생산수율은 확인하지 못했습니다."],
   "selectionAxes": ["MARKET FAMILIARITY", "FOOD EXPERIENCE", "MANUFACTURING FIT"],
+  "priceDistribution": {
+    "scope": "80 SKU 중 100g당 가격이 확인된 60개 SKU. 단백질 RTD는 ml 단위라 제외",
+    "unit": "원/100g",
+    "summary": {"min": 431, "max": 4980, "average": 1516, "median": 702},
+    "categories": [
+      {"name":"즉석죽","count":20,"min":550,"max":855,"average":659},
+      {"name":"스파우트·파우치","count":20,"min":431,"max":2173,"average":1110},
+      {"name":"분말 영양식","count":20,"min":793,"max":4980,"average":2778}
+    ],
+    "buckets": [
+      {"label":"400–599원","count":9},
+      {"label":"600–799원","count":19},
+      {"label":"800–1,199원","count":7},
+      {"label":"1,200–1,999원","count":9},
+      {"label":"2,000원 이상","count":16}
+    ]
+  },
   "priceReviewComparison": {
     "scope": "죽·파우치·스파우트 공개 상품 중 리뷰 수와 100g당 가격이 함께 확인된 11개 SKU",
     "unit": "가격은 원/100g, 리뷰는 공개 상품평 수",
