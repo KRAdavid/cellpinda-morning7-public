@@ -77,7 +77,112 @@
     "holdSeparate": [{"name": "Ornithine", "status": "HOLD", "label": "별도 프로젝트"}],
     "rationale": "셀핀다의 역할은 죽을 복잡하게 만드는 것이 아니라, 한 끼의 영양과 먹는 순간의 몸과 마음까지 고려해 발효과학을 더하는 것입니다.",
     "boundary": "GABA가 스트레스를 낮추거나 소화·영양 흡수를 개선한다고 제품 효능으로 연결하지 않습니다. 과학적 배경과 제품 설계 검토를 분리합니다.",
-    "manufacturerTests": ["열처리 전 함량", "열처리 후 함량", "완제품 함량", "맛·후미", "색", "pH 영향", "침전·분리", "보존 중 안정성"]
+    "manufacturerTests": ["열처리 전 함량", "열처리 후 함량", "완제품 함량", "맛·후미", "색", "pH 영향", "침전·분리", "보존 중 안정성"],
+    "evidenceBoundary": "원료 연구와 공식 기준은 제품 설계의 참고자료로만 사용합니다. 셀핀다 완제품의 효능·권장량·안정성은 별도 시험이 끝난 뒤에만 판단합니다."
+  },
+  "evidence": {
+    "lastReviewed": "2026-09-14",
+    "reviewRule": "공식 기준·인체 연구·시장 관찰을 서로 다른 자료 유형으로 표시하고, 원료 연구를 완제품 주장으로 바꾸지 않습니다.",
+    "sources": [
+      {
+        "id": "kdris-2020",
+        "type": "공식 영양 기준",
+        "year": "2020",
+        "title": "2020 한국인 영양소 섭취기준",
+        "publisher": "보건복지부·한국영양학회",
+        "design": "국가 영양 기준",
+        "sample": "국가 기준 문서",
+        "measure": "영양소별 EAR·RI·AI·UL·CDRR 체계",
+        "finding": "제품 영양 목표를 설계할 때 개인별 권장량과 제품 1회 섭취량을 구분할 수 있는 기준을 제공합니다.",
+        "consumerSummary": "한 팩의 숫자는 개인에게 필요한 하루 권장량이 아니라, 제품을 설계하고 표시할 때 참고하는 기준선입니다.",
+        "use": "영양 목표의 용어·단위·표시 기준을 정하는 참고자료",
+        "url": "https://www.kns.or.kr/fileroom/FileRoom_view.asp?BoardID=Kdr&cn_search=2020&idx=108&mode=mod&page=1&xsearch=1"
+      },
+      {
+        "id": "mfds-labeling",
+        "type": "공식 표시 지침",
+        "year": "2025",
+        "title": "한눈에 보는 영양표시 가이드라인",
+        "publisher": "식품의약품안전처",
+        "design": "산업계 표시 안내서",
+        "sample": "규정·질의응답 기반 안내",
+        "measure": "열량·나트륨·탄수화물·당류·지방·단백질 등 표시 항목",
+        "finding": "영양표시와 광고 근거자료는 표시 내용과 직접 관련되고 객관적으로 확인 가능해야 합니다.",
+        "consumerSummary": "제품에 적힌 숫자와 설명은 실제 제품 시험·표시자료로 확인할 수 있을 때만 공개합니다.",
+        "use": "영양 수치 공개와 광고 문구의 검토 기준",
+        "url": "https://www.mfds.go.kr/eng/wpge/m_14/denofile.do"
+      },
+      {
+        "id": "codex-hygiene-2022",
+        "type": "국제 식품안전 기준",
+        "year": "2022",
+        "title": "General Principles of Food Hygiene · CXC 1-1969",
+        "publisher": "FAO·WHO Codex Alimentarius",
+        "design": "GHP·HACCP 국제 가이드",
+        "sample": "식품 전 과정 적용 원칙",
+        "measure": "위해요소 분석·중요관리점·검증 기록",
+        "finding": "상온 제품을 개발할 때 원료·공정·충전·보관의 위해요소를 체계적으로 관리하는 틀을 제공합니다.",
+        "consumerSummary": "상온에서 안심하고 먹는 경험은 맛뿐 아니라 공정과 보관을 확인하는 절차에서 시작합니다.",
+        "use": "살균·충전·소비기한 시험 질문을 설계하는 기준",
+        "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/codes-of-practice"
+      },
+      {
+        "id": "gaba-systematic-review-2020",
+        "type": "인체 연구 종합",
+        "year": "2020",
+        "title": "Effects of Oral GABA Administration on Stress and Sleep in Humans",
+        "publisher": "Frontiers in Neuroscience · PubMed",
+        "design": "체계적 문헌고찰",
+        "sample": "위약대조 사람 대상 연구 14편",
+        "measure": "스트레스·수면·심리생리 지표",
+        "finding": "자연 유래 또는 발효 GABA를 사용한 사람 대상 연구를 PRISMA 방식으로 모아 연구 조건과 측정 지표를 비교했습니다.",
+        "consumerSummary": "여러 사람 대상 연구를 한 번에 비교해, 어떤 조건과 측정법을 확인해야 하는지 보여주는 지도입니다.",
+        "use": "GABA 적용 가능성을 검토할 때 시험 조건과 표현 범위를 정하는 참고자료",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33041752/"
+      },
+      {
+        "id": "gaba-stress-rct-2012",
+        "type": "인체 연구",
+        "year": "2012",
+        "title": "Oral intake of GABA affects mood and CNS activity during mental stress",
+        "publisher": "Amino Acids · PubMed",
+        "design": "무작위·단일맹검·위약대조·교차시험",
+        "sample": "성인 63명",
+        "measure": "100 mg GABA, EEG, POMS, 정신 과제 후 30분",
+        "finding": "정신적 과제를 수행한 성인을 대상으로 GABA와 위약 조건의 뇌파·기분 지표를 비교했습니다.",
+        "consumerSummary": "성인 63명이 참여한 실험에서 뇌파와 기분을 함께 측정했습니다. 셀핀다 완제품 시험이 아니라 인체 시험 설계의 예입니다.",
+        "use": "섭취 시점·대조군·측정 지표를 설계할 때 참고",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22203366/"
+      },
+      {
+        "id": "gaba-sleep-rct-2016",
+        "type": "인체 연구",
+        "year": "2016",
+        "title": "Effect of oral GABA administration on sleep and its absorption in humans",
+        "publisher": "Food Science & Biotechnology · PubMed",
+        "design": "무작위·단일맹검·위약대조·교차시험",
+        "sample": "사람 대상 수면 측정 실험",
+        "measure": "EEG 수면잠복기·비렘수면·섭취 후 혈중 농도",
+        "finding": "수면 관련 지표와 섭취 후 혈중 GABA 변화를 함께 관찰해 시간축을 기록했습니다.",
+        "consumerSummary": "잠드는 시간과 수면 단계를 뇌파로 확인하고 섭취 후 변화를 기록한 연구입니다. 연구 용량을 제품 권장량으로 옮기지 않습니다.",
+        "use": "수면 관련 소비자 질문을 다룰 때 측정법과 시간 조건을 설명하는 참고",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30263304/"
+      },
+      {
+        "id": "efsa-protein-2012",
+        "type": "공식 과학 의견",
+        "year": "2012",
+        "title": "Scientific Opinion on Dietary Reference Values for Protein",
+        "publisher": "EFSA Journal",
+        "design": "식이 기준 과학 의견",
+        "sample": "건강한 성인 기준 검토",
+        "measure": "성인 단백질 PRI 0.83 g/kg/day",
+        "finding": "EFSA는 성인의 단백질 인구참조섭취량을 체중 1 kg당 하루 0.83 g으로 제시하면서 제품별 목표와 구분되는 기준임을 설명합니다.",
+        "consumerSummary": "하루 단백질 기준은 체중·연령·상태에 따라 달라집니다. MORNING 7의 1팩 목표값은 개인 권장량을 대신하지 않습니다.",
+        "use": "단백질 목표를 전체 식사 맥락에서 검토하는 참고자료",
+        "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2012.2557"
+      }
+    ]
   },
   "giTolerance": {
     "title": "영양을 더하되, 먹는 부담은 높이지 않습니다.",

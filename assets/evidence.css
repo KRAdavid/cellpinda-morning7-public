@@ -1,0 +1,165 @@
+/* Evidence register: dense enough for review, scannable enough for consumers. */
+.evidence-register {
+  margin-top: 78px;
+  padding-top: 42px;
+  border-top: 1px solid var(--line);
+}
+
+.evidence-register-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 28px;
+}
+
+.evidence-register-head h3 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: -.07em;
+  word-break: keep-all;
+}
+
+.evidence-register-head p {
+  max-width: 360px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: right;
+  word-break: keep-all;
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.evidence-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+  padding: 24px 23px 22px;
+  background: #fff;
+}
+
+.evidence-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--sage);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+.evidence-top time {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.evidence-card h4 {
+  margin: 18px 0 6px;
+  font-size: 19px;
+  line-height: 1.35;
+  letter-spacing: -.045em;
+  word-break: keep-all;
+}
+
+.evidence-publisher {
+  margin: 0 0 17px;
+  color: var(--muted);
+  font-size: 11px;
+  word-break: keep-all;
+}
+
+.evidence-card dl {
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  gap: 6px 10px;
+  margin: 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.evidence-card dt {
+  color: var(--muted);
+}
+
+.evidence-card dd {
+  margin: 0;
+  color: var(--ink);
+  word-break: keep-all;
+}
+
+.evidence-finding,
+.evidence-use {
+  margin: 13px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+.evidence-finding strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--ink);
+  font-size: 10px;
+  letter-spacing: .05em;
+}
+
+.evidence-use strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--sage);
+  font-size: 10px;
+  letter-spacing: .05em;
+}
+
+.evidence-link {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 16px;
+  color: var(--blue);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.evidence-method {
+  max-width: 800px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+
+.data-quality-summary {
+  margin: 14px 0 0;
+  padding: 14px 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .evidence-register-head { display: block; }
+  .evidence-register-head p { max-width: 540px; margin-top: 16px; text-align: left; }
+}
+
+@media (max-width: 600px) {
+  .evidence-register { margin-top: 58px; padding-top: 34px; }
+  .evidence-register-head h3 { font-size: 26px; }
+  .evidence-grid { grid-template-columns: 1fr; }
+  .evidence-card { min-height: 0; padding: 21px 18px 20px; }
+}
