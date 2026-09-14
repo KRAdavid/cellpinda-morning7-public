@@ -1,0 +1,39 @@
+/* Contrast guard for the sage sections. Keep copy readable on every card and chip. */
+.section.sage .prep-flow article {
+  color: var(--ink);
+  background: #fff;
+}
+
+.section.sage .prep-flow strong {
+  color: var(--ink);
+}
+
+.section.sage .prep-flow span {
+  color: #4f5b54;
+}
+
+.section.sage .prep-targets span {
+  color: #173d2a;
+  background: rgba(255, 255, 255, .96);
+  border-color: rgba(255, 255, 255, .78);
+}
+
+.section.sage .prep-targets span:hover,
+.section.sage .prep-targets span:focus-visible {
+  color: #102a1e;
+  background: #fff;
+  border-color: #fff;
+}
+
+.section.sage .head > p,
+.section.sage .guard {
+  color: #edf7ef !important;
+}
+
+.section.sage .route small {
+  color: #e7f4ea;
+}
+
+.section.sage .route span {
+  color: #e4f1e7;
+}
