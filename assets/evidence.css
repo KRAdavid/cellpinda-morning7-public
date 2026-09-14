@@ -152,6 +152,8 @@
   border-radius: 12px;
 }
 
+.price-review-summary{margin-bottom:24px}.price-review-meta{display:flex;justify-content:space-between;gap:20px;padding:0 0 16px;border-bottom:1px solid var(--line);font-size:13px}.price-review-meta span{color:var(--muted)}.price-review-chart{border-bottom:1px solid var(--line)}.price-review-row{display:grid;grid-template-columns:240px 1fr;gap:24px;padding:15px 0;border-bottom:1px solid var(--line)}.price-review-row:last-child{border-bottom:0}.price-review-name strong,.price-review-name span{display:block}.price-review-name strong{font-size:14px}.price-review-name span{color:var(--muted);font-size:11px;margin-top:3px}.price-review-bars{display:grid;gap:8px}.bar-line{position:relative;height:25px;background:#eef2ef;border-radius:4px;overflow:hidden}.bar-line i{display:block;height:100%;background:var(--sage);opacity:.88;border-radius:4px}.bar-line.price{background:#f1f1f3}.bar-line.price i{background:#8d8f96}.bar-line span{position:absolute;z-index:1;left:9px;top:3px;font-size:11px;color:var(--ink);font-weight:600}.gate-note{word-break:keep-all}@media(max-width:700px){.price-review-meta{display:block}.price-review-meta span{display:block;margin-top:7px}.price-review-row{grid-template-columns:1fr;gap:10px}}
+
 @media (max-width: 900px) {
   .evidence-register-head { display: block; }
   .evidence-register-head p { max-width: 540px; margin-top: 16px; text-align: left; }

@@ -13,6 +13,24 @@
   },
   "limits": ["리뷰 수는 판매량이 아닙니다.", "노출은 시장점유율이 아닙니다.", "공개가격은 실제 납품가격이 아닙니다.", "실제 재구매율과 생산수율은 확인하지 못했습니다."],
   "selectionAxes": ["MARKET FAMILIARITY", "FOOD EXPERIENCE", "MANUFACTURING FIT"],
+  "priceReviewComparison": {
+    "scope": "죽·파우치·스파우트 공개 상품 중 리뷰 수와 100g당 가격이 함께 확인된 11개 SKU",
+    "unit": "가격은 원/100g, 리뷰는 공개 상품평 수",
+    "interpretation": "리뷰 수는 누적 공개 수요 신호이며 판매량이 아닙니다. 가격은 수집 시점의 공개 소비자가격이며 납품가격이 아닙니다.",
+    "items": [
+      {"name":"동원 양반 쇠고기죽 파우치","category":"파우치","reviews":30962,"pricePer100g":550},
+      {"name":"양반 전복죽","category":"즉석죽","reviews":23774,"pricePer100g":702},
+      {"name":"햇반 단호박죽","category":"즉석죽","reviews":23462,"pricePer100g":636},
+      {"name":"본죽 아침엔 쇠고기죽","category":"파우치","reviews":10510,"pricePer100g":1225},
+      {"name":"햇반 전복 내장죽","category":"즉석죽","reviews":7835,"pricePer100g":676},
+      {"name":"오뚜기 전복죽","category":"즉석죽","reviews":7476,"pricePer100g":702},
+      {"name":"양반 밤단팥죽 파우치","category":"파우치","reviews":7144,"pricePer100g":576},
+      {"name":"오뚜기 단호박죽","category":"즉석죽","reviews":5766,"pricePer100g":663},
+      {"name":"오뚜기 고시히카리쌀죽","category":"즉석죽","reviews":5377,"pricePer100g":557},
+      {"name":"햇반 들깨버섯죽","category":"즉석죽","reviews":5115,"pricePer100g":550},
+      {"name":"짱죽 쌀눈 한우야채죽","category":"스파우트","reviews":979,"pricePer100g":1721}
+    ]
+  },
   "decision": "시장 친숙도·공개 수요신호·제조 적합성을 바탕으로 첫 개발 후보 3종을 좁혔습니다.",
   "candidates": [
     {"number": "01", "name": "단호박죽", "category": "즉석죽", "signal": "친숙한 단맛 계열", "experience": "부드러운 식사감", "fit": "기본 베이스로 검토", "source": "공개 제품·리뷰 표본"},
