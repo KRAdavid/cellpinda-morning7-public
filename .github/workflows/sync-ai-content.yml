@@ -1,0 +1,60 @@
+name: Sync AI-published public content
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-content-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch latest verified content
+        id: content
+        env:
+          WORKER_URL: ${{ secrets.MORNING7_WORKER_URL }}
+        run: |
+          set -euo pipefail
+          if [ -z "${WORKER_URL}" ]; then
+            echo "MORNING7_WORKER_URL is not configured; keeping repository content unchanged."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          url="${WORKER_URL%/}/api/public/published-content?path=index.html"
+          status=$(curl -L -sS -o /tmp/morning7-index.html -w "%{http_code}" "$url")
+          if [ "$status" = "404" ]; then
+            echo "No verified AI content is published yet."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          test "$status" = "200"
+          test -s /tmp/morning7-index.html
+          cmp -s index.html /tmp/morning7-index.html && {
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          }
+          cp /tmp/morning7-index.html index.html
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Validate public brief
+        if: steps.content.outputs.changed == 'true'
+        run: node scripts/validate-public-brief.mjs
+
+      - name: Commit and push verified content
+        if: steps.content.outputs.changed == 'true'
+        run: |
+          git config user.name "CELLPINDA AI Content Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html
+          git commit -m "[skip ci] chore: sync verified AI public content"
+          git push
