@@ -1,0 +1,140 @@
+{
+  "project": {
+    "id": "PRJ-MTSCEF31-B124D0C1",
+    "name": "MORNING 7 · 휴대형 영양죽 개발",
+    "status": "GATE_1_COMPLETE_WITH_GAP",
+    "mission": "식사를 거르기 쉬운 현대인을 위해 익숙한 죽에 필요한 영양을 다시 설계하고 셀핀다의 발효과학을 더해, 언제 어디서나 바로 먹는 휴대형 한 끼 대안을 개발합니다.",
+    "consumerSentence": "좋아하는 죽에 필요한 영양을 더해, 언제 어디서나 바로 먹는 한 끼.",
+    "standard": "Meal First. Nutrition Designed. CELLPINDA Science Inside."
+  },
+  "concept": {
+    "why": "시간·이동·업무·수업·준비 부담으로 끼니가 비는 Meal Gap을 줄입니다.",
+    "what": "한국인이 익숙하게 한 끼로 이해하는 죽을 휴대형 영양식으로 다시 설계합니다.",
+    "how": "실온 스파우트, 바로 섭취, 영양 보완, 셀핀다 발효과학을 하나의 식사 경험으로 연결합니다.",
+    "morningLine": "아침에서 시작해, 끼니가 비는 모든 순간으로."
+  },
+  "products": [
+    {
+      "id": "pumpkin",
+      "number": "01",
+      "name": "단호박죽",
+      "baseFood": "쌀·단호박·곡물",
+      "targetTaste": "부드럽고 은은한 단맛",
+      "targetTexture": "입자감이 낮고 매끄러운 질감",
+      "status": "TARGET",
+      "statusLabel": "첫 개발 후보",
+      "description": "처음 만나는 사람도 맛을 바로 이해할 수 있는 기본축입니다.",
+      "image": "./assets/morning7-pumpkin.png",
+      "alt": "단호박과 쌀을 담은 단호박죽 실온 스파우트 콘셉트"
+    },
+    {
+      "id": "chicken",
+      "number": "02",
+      "name": "닭·야채죽",
+      "baseFood": "쌀·쌀눈·닭·야채",
+      "targetTaste": "담백하고 익숙한 식사형 맛",
+      "targetTexture": "부드럽지만 한 끼 식사감이 느껴지는 질감",
+      "status": "TARGET",
+      "statusLabel": "기준 개발 후보",
+      "description": "반복해서 먹기 쉬운 중립적인 맛과 식사감을 기준으로 삼습니다.",
+      "image": "./assets/morning7-chicken.png",
+      "alt": "쌀과 닭고기, 야채를 담은 닭야채죽 실온 스파우트 콘셉트"
+    },
+    {
+      "id": "beef",
+      "number": "03",
+      "name": "쇠고기·버섯죽",
+      "baseFood": "쌀·쇠고기·버섯",
+      "targetTaste": "풍부한 풍미와 든든한 식사감",
+      "targetTexture": "재료감은 살리고 통과성은 확보하는 질감",
+      "status": "TARGET",
+      "statusLabel": "풍미 개발 후보",
+      "description": "한 팩을 먹었다는 만족감을 분명하게 만드는 식사형 축입니다.",
+      "image": "./assets/morning7-beef.png",
+      "alt": "쇠고기와 버섯을 담은 쇠고기버섯죽 실온 스파우트 콘셉트"
+    }
+  ],
+  "nutrition": {
+    "goal": "식사를 거른 사람이 한 팩을 먹었을 때 식사로서 의미 있는 영양을 제공하는가?",
+    "formula": "Nutrition Value × Completion = Actual Intake",
+    "priorities": ["Energy", "Protein", "Carbohydrate", "Appropriate Fat", "Dietary Fiber", "Necessary Micronutrients", "CELLPINDA Science"],
+    "targets": [
+      {"name": "Net weight", "value": "200 g", "status": "TARGET", "note": "제조사가 더 좋은 내용량을 제안할 수 있습니다."},
+      {"name": "Energy", "value": "220–300 kcal", "status": "TEST", "note": "맛·완식성·영양 설계와 함께 조정합니다."},
+      {"name": "Protein", "value": "10–15 g", "status": "TEST", "note": "원료 선택과 목넘김을 제조시험으로 확인합니다."},
+      {"name": "Dietary fiber", "value": "3–5 g", "status": "TEST", "note": "점도·포만감·섭취 부담의 균형을 확인합니다."}
+    ],
+    "guardrail": "가장 많은 영양을 넣는 것이 아니라, 맛·목넘김·완식성을 유지하면서 실제로 섭취되는 영양을 최대화합니다."
+  },
+  "science": {
+    "signature": {"name": "Fermented GABA", "status": "TEST", "label": "CELLPINDA Signature 후보", "note": "열처리 전후 함량과 관능을 확인한 뒤 적용 여부를 결정합니다."},
+    "nutritionCandidates": [
+      {"name": "Zinc", "status": "TEST", "label": "영양 후보"},
+      {"name": "Selenium", "status": "TEST", "label": "영양 후보"},
+      {"name": "Fiber", "status": "TEST", "label": "영양 후보"}
+    ],
+    "rdCandidates": [{"name": "Arginine", "status": "TEST", "label": "R&D 후보"}],
+    "holdSeparate": [{"name": "Ornithine", "status": "HOLD", "label": "별도 프로젝트"}],
+    "rationale": "셀핀다의 역할은 죽을 복잡하게 만드는 것이 아니라, 한 끼의 영양과 먹는 순간의 몸과 마음까지 고려해 발효과학을 더하는 것입니다.",
+    "boundary": "GABA가 스트레스를 낮추거나 소화·영양 흡수를 개선한다고 제품 효능으로 연결하지 않습니다. 과학적 배경과 제품 설계 검토를 분리합니다.",
+    "manufacturerTests": ["열처리 전 함량", "열처리 후 함량", "완제품 함량", "맛·후미", "색", "pH 영향", "침전·분리", "보존 중 안정성"]
+  },
+  "giTolerance": {
+    "title": "영양을 더하되, 먹는 부담은 높이지 않습니다.",
+    "summary": "위장질환을 치료하기 위한 제품이 아니라, 다양한 소비자가 한 팩을 편하게 먹을 수 있도록 관능과 식사부담을 함께 검토합니다.",
+    "guardrails": ["과도한 지방 피하기", "과도한 식이섬유 강화 피하기", "지나치게 큰 입자 피하기", "과도하게 높은 점도 피하기", "강한 향신료·자극감 최소화", "단백질 강화 시 이취·점도 확인", "GI-sensitive 소비자 관능 테스트 포함"]
+  },
+  "zeroPrep": {
+    "title": "결식만큼 간단해야, 결식과 경쟁할 수 있습니다.",
+    "steps": ["OPEN", "EAT", "DONE"],
+    "targets": ["물 필요 없음", "우유 필요 없음", "조리 필요 없음", "그릇 필요 없음", "숟가락 사용 최소화 목표", "설거지 없음"],
+    "note": "200 g 실온 스파우트는 현재 TARGET EXPERIENCE이며 실제 포장 시험 후 확정합니다."
+  },
+  "responsibilities": {
+    "brand": ["Why", "Target Consumer", "Consumer Problem", "Product Philosophy", "Meal Experience", "Brand", "Target Price", "Channel"],
+    "manufacturer": ["Food formulation", "Process", "Heating", "Sterilization", "Filling", "Viscosity", "Particle size", "Shelf life", "Production stability", "CAPA"],
+    "coDevelopment": ["Nutrition", "Taste", "Texture", "Protein system", "Fiber", "GABA application", "Net weight", "Package", "Cost", "Prototype"]
+  },
+  "manufacturerQuestions": [
+    {"id": "base-recipe", "question": "기존 생산제품 중 가장 가까운 기본 레시피는 무엇인가요?", "status": "POSSIBLE"},
+    {"id": "three-flavors", "question": "단호박·닭야채·쇠고기버섯 3종을 같은 공정으로 개발할 수 있나요?", "status": "TEST REQUIRED"},
+    {"id": "net-weight", "question": "직접 섭취에 가장 적합한 내용량은 얼마인가요? 200 g의 대안과 이유는 무엇인가요?", "status": "ALTERNATIVE PROPOSAL"},
+    {"id": "spout", "question": "최적 스파우트 규격은 무엇인가요?", "status": "PARTNER PROPOSAL"},
+    {"id": "viscosity", "question": "직접 섭취에 적합한 점도 범위는 무엇인가요?", "status": "PARTNER PROPOSAL"},
+    {"id": "particle", "question": "스파우트 통과성과 식사감을 함께 만족하는 최적 입도는 무엇인가요?", "status": "TEST REQUIRED"},
+    {"id": "protein-level", "question": "Protein 10·12·15 g 적용 가능성은 각각 어떤가요?", "status": "TEST REQUIRED"},
+    {"id": "protein-source", "question": "가장 관능이 좋은 Protein Source는 무엇인가요?", "status": "PARTNER PROPOSAL"},
+    {"id": "fiber", "question": "식이섬유 3–5 g 적용 시 점도·맛·분리에는 어떤 변화가 있나요?", "status": "TEST REQUIRED"},
+    {"id": "gaba", "question": "GABA 투입 시 열처리 전후 안정성과 완제품 함량은 어떻게 확인하나요?", "status": "TEST REQUIRED"},
+    {"id": "product-risk", "question": "제품별 pH·점도·분리 위험은 어떻게 예측하고 관리하나요?", "status": "TEST REQUIRED"},
+    {"id": "ambient", "question": "실온 보관·상온 유통 제품으로 구현할 수 있나요?", "status": "POSSIBLE"},
+    {"id": "sterilization", "question": "권장 살균 또는 레토르트 조건은 무엇인가요?", "status": "PARTNER PROPOSAL"},
+    {"id": "shelf-life", "question": "예상 소비기한과 보존 중 품질 변화는 어떻게 확인하나요?", "status": "TEST REQUIRED"},
+    {"id": "moq", "question": "최소 생산수량(MOQ)은 얼마인가요?", "status": "PARTNER PROPOSAL"},
+    {"id": "capa", "question": "월 생산 가능 수량(CAPA)은 어느 정도인가요?", "status": "PARTNER PROPOSAL"},
+    {"id": "prototype-lead", "question": "시제품 제작 리드타임과 필요한 선행 자료는 무엇인가요?", "status": "PARTNER PROPOSAL"},
+    {"id": "cost", "question": "예상 제조원가와 원가를 좌우하는 핵심 변수는 무엇인가요?", "status": "PARTNER PROPOSAL"},
+    {"id": "sensory", "question": "소비자 관능시험에서 확인해야 할 기준과 샘플 수는 무엇인가요?", "status": "TEST REQUIRED"},
+    {"id": "better-option", "question": "제조사 관점에서 현재 안보다 더 좋은 맛·공정·원가 대안이 있나요?", "status": "ALTERNATIVE PROPOSAL"}
+  ],
+  "developmentStatus": [
+    {"name": "Meal Gap Solution", "status": "LOCKED", "note": "끼니가 비는 순간을 해결한다는 문제 정의"},
+    {"name": "Porridge format", "status": "LOCKED", "note": "익숙한 죽을 기본 식사로 삼는다"},
+    {"name": "Three base recipes", "status": "TARGET", "note": "첫 제조시험 후보 3종"},
+    {"name": "Ambient spout", "status": "TARGET", "note": "실온·바로 섭취 경험"},
+    {"name": "Nutrition targets", "status": "TEST", "note": "영양·맛·완식성 검증 필요"},
+    {"name": "Fermented GABA", "status": "TEST", "note": "셀핀다 시그니처 적용 가능성 검증"},
+    {"name": "Protein source", "status": "PARTNER PROPOSAL", "note": "제조사가 원료와 공정을 제안"},
+    {"name": "Viscosity · particle size", "status": "PARTNER PROPOSAL", "note": "스파우트와 식사감 동시 검증"},
+    {"name": "Sterilization · packaging", "status": "PARTNER PROPOSAL", "note": "실제 시제품과 소비기한 확인"}
+  ],
+  "nextGate": {
+    "market": "COMPLETE WITH LIMITATION",
+    "consumer": "CONCEPT LOCKED",
+    "architecture": "IN PROGRESS",
+    "manufacturing": "NEXT",
+    "prototype": "NOT STARTED",
+    "next": "Manufacturer Feasibility → Prototype Brief",
+    "actions": ["제조사 20개 질문에 서면 답변", "200 g 기준 3종 배합 가능성 확인", "열처리·점도·관능·원가 시험 범위 합의"]
+  }
+}

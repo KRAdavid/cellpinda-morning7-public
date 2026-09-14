@@ -1,0 +1,21 @@
+{
+  "snapshotAt": "2026-09-10",
+  "scope": "즉석죽·스파우트·파우치·분말 영양식·단백질 RTD 공개 표본",
+  "sampleSize": "80 SKU",
+  "method": "공개 리뷰·노출·구매 신호와 제조 적합성 공개 사례를 비교한 관찰 표본",
+  "limits": ["리뷰 수는 판매량이 아닙니다.", "노출은 시장점유율이 아닙니다.", "공개가격은 실제 납품가격이 아닙니다.", "실제 재구매율과 생산수율은 확인하지 못했습니다."],
+  "selectionAxes": ["MARKET FAMILIARITY", "FOOD EXPERIENCE", "MANUFACTURING FIT"],
+  "decision": "시장 친숙도·공개 수요신호·제조 적합성을 바탕으로 첫 개발 후보 3종을 좁혔습니다.",
+  "candidates": [
+    {"number": "01", "name": "단호박죽", "category": "즉석죽", "signal": "친숙한 단맛 계열", "experience": "부드러운 식사감", "fit": "기본 베이스로 검토", "source": "공개 제품·리뷰 표본"},
+    {"number": "02", "name": "닭·야채죽", "category": "스파우트·파우치", "signal": "담백한 식사형 조합", "experience": "반복 섭취에 중립적인 맛", "fit": "200 g 제형과 비교", "source": "공개 제품 구조 표본"},
+    {"number": "03", "name": "쇠고기·버섯죽", "category": "스파우트·파우치", "signal": "깊은 풍미 계열", "experience": "든든한 식사감", "fit": "풍미·입도 시험 후보", "source": "공개 제품 구조 표본"}
+  ],
+  "alternatives": [
+    {"name": "빵", "tradeoff": "준비는 쉽지만 한 끼 식사감과 영양 설계가 제한될 수 있음"},
+    {"name": "두유·단백질 음료", "tradeoff": "휴대가 쉽지만 죽과 다른 맛·포만감 경험"},
+    {"name": "에너지바", "tradeoff": "간편하지만 부드러운 식사 경험과는 다름"},
+    {"name": "편의점 간편식", "tradeoff": "접근성은 높지만 이동 중 바로 먹는 흐름에 제약"},
+    {"name": "결식", "tradeoff": "가장 간단하지만 소비자 문제를 그대로 남김"}
+  ]
+}
