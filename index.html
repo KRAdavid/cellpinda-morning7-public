@@ -30,15 +30,15 @@
     <section class="hero" id="hero">
       <div class="shell hero-grid">
         <div>
-          <span class="eyebrow">PUBLIC PRODUCT CO-DEVELOPMENT BRIEF</span>
+          <span class="eyebrow">공개 제품개발 브리프</span>
           <h1>식사를 놓치는 순간,<br><em>한 끼를 다시 꺼냅니다.</em></h1>
           <p class="hero-lead">식사를 거르기 쉬운 현대인을 위해 익숙한 죽에 필요한 영양과 셀핀다의 발효과학을 더해, 별도 준비 없이 바로 먹는 휴대형 한 끼를 개발합니다.</p>
-          <div class="hero-proof"><span>시장 친숙도가 높은 죽 메뉴</span><span>영양 설계</span><span>실온 스파우트 Target</span><span>Zero Prep</span></div>
-          <div class="manufacturer-orientation" aria-label="제품개발 브리프 읽는 법"><div><small>BRAND DECISION</small><strong>무엇을 만들지 정의</strong></div><div><small>PARTNER INPUT</small><strong>어떻게 만들지 제안</strong></div><div><small>NEXT GATE</small><strong>제조 가능성 확인</strong></div></div>
+          <div class="hero-proof"><span>시장 친숙도가 높은 죽 메뉴</span><span>영양 설계</span><span>실온 스파우트 목표</span><span>준비 없이 섭취</span></div>
+          <div class="manufacturer-orientation" aria-label="제품개발 브리프 읽는 법"><div><small>브랜드가 정할 것</small><strong>무엇을 만들지 정의</strong></div><div><small>제조사 제안</small><strong>어떻게 만들지 제안</strong></div><div><small>다음 확인 단계</small><strong>제조 가능성 확인</strong></div></div>
           <a class="hero-cta" href="#meal-gap">제품 개발 방향 읽기 ↓</a>
         </div>
         <aside class="hero-side">
-          <small>PRODUCT DIRECTION</small>
+          <small>제품 방향</small>
           <strong>좋아하는 죽을,<br>언제 어디서나 한 끼로.</strong>
           <p>아침에서 시작해, 끼니가 비는 모든 순간으로.</p>
           <img class="hero-image" src="./assets/morning7-banner-trio.png" alt="단호박죽, 닭야채죽, 쇠고기버섯죽 실온 스파우트 콘셉트" fetchpriority="high">
@@ -171,6 +171,9 @@
 
   <footer class="site-footer"><div class="shell"><strong>CELLPINDA · MORNING 7</strong><span>공개 제품 공동개발 브리프 · 2026.09 · 제조시험 전 목표와 제안 영역을 구분합니다.</span></div></footer>
   <script src="./assets/site.js" defer></script>
+  <script>
+    (()=>{const words={'PUBLIC PRODUCT CO-DEVELOPMENT BRIEF':'공개 제품개발 브리프','PRODUCT DIRECTION':'제품 방향','MEAL GAP':'끼니가 비는 순간','WHY PORRIDGE':'왜 죽인가','MARKET EVIDENCE':'시장 근거','THREE BASE RECIPES':'기본 죽 3종','MORNING 7 NUTRITION STANDARD':'모닝7 영양 기준','GI TOLERANCE DESIGN':'먹는 부담 설계','ZERO PREP EXPERIENCE':'준비 없이 먹는 경험','BRAND × MANUFACTURER':'브랜드와 제조사','MANUFACTURER RESPONSE REQUIRED':'제조사 검토 요청','DEVELOPMENT GATE':'다음 개발 단계','EVIDENCE / SOURCE':'근거 자료','EVIDENCE REGISTER':'근거 목록','MARKET FAMILIARITY':'시장 친숙도','FOOD EXPERIENCE':'먹는 경험','MANUFACTURING FIT':'제조 적합성','CONSUMER JOB':'소비자가 할 일','NUTRITION DESIGN':'영양 설계','EVERY MEAL':'하루의 식사','FAMILIAR':'익숙함','FLEXIBLE':'설계 가능성','PORTABLE':'휴대성','MEAL':'식사성','OPEN':'열기','EAT':'먹기','DONE':'끝내기','Target Experience':'목표 경험','TARGET':'목표','Zero Prep':'준비 없이 섭취','R&D Target':'개발 목표','Nutrition Value × Completion = Actual Intake':'영양 설계 × 완식성 = 실제 섭취량','Manufacturer Feasibility':'제조 가능성','Prototype Brief':'시제품 브리프'};const fix=()=>{const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const a=[];while(w.nextNode())a.push(w.currentNode);a.forEach(n=>{let s=n.nodeValue;Object.entries(words).forEach(([a,b])=>{s=s.split(a).join(b)});if(s!==n.nodeValue)n.nodeValue=s})};fix();new MutationObserver(fix).observe(document.body,{subtree:true,childList:true,characterData:true})})();
+  </script>
 </body>
 </html>
 
