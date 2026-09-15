@@ -14,7 +14,7 @@ const brief=JSON.parse(await read('data/product-brief.json'));
 const market=JSON.parse(await read('data/market-data.json'));
 const snapshot=JSON.parse(await read('data/PUBLIC_STATUS_SNAPSHOT_20260910.json'));
 const forbidden=['LI'+'GHT','DAI'+'LY','FU'+'LL','아침'+' 상태별'];
-const required=['MEAL GAP','WHY PORRIDGE','MARKET EVIDENCE','THREE BASE RECIPES','MORNING 7 NUTRITION STANDARD','CELLPINDA SCIENCE','GI TOLERANCE DESIGN','ZERO PREP EXPERIENCE','DEVELOPMENT STATUS','BRAND × MANUFACTURER','MANUFACTURER RESPONSE REQUIRED','DEVELOPMENT GATE','EVIDENCE / SOURCE'];
+const required=['MEAL GAP','WHY PORRIDGE','MARKET EVIDENCE','THREE BASE RECIPES','MORNING 7 NUTRITION STANDARD','CELLPINDA SCIENCE','GI TOLERANCE DESIGN','ZERO PREP EXPERIENCE','개발 현황','BRAND × MANUFACTURER','MANUFACTURER RESPONSE REQUIRED','DEVELOPMENT GATE','EVIDENCE / SOURCE'];
 for(const marker of required)if(!index.includes(marker))fail(`index missing ${marker}`);
 if(!index.includes('./assets/styles.css')||!index.includes('./assets/site.js'))fail('index asset links missing');
 if(!index.includes('./assets/contrast-overrides.css')||!gate.includes('./assets/contrast-overrides.css'))fail('contrast override links missing');
