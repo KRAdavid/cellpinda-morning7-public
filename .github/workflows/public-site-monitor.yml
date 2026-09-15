@@ -1,0 +1,48 @@
+name: Monitor public site
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check published pages and data
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const base = 'https://kradavid.github.io/cellpinda-morning7-public';
+            const paths = [
+              '/', '/gate1-market.html', '/assets/styles.css', '/assets/site.js',
+              '/assets/gate1-market.js', '/assets/evidence.css', '/data/product-brief.json',
+              '/data/market-data.json', '/robots.txt', '/sitemap.xml'
+            ];
+            const failures = [];
+            for (const path of paths) {
+              const response = await fetch(`${base}${path}`);
+              if (!response.ok) failures.push(`${path}: HTTP ${response.status}`);
+            }
+            const page = await (await fetch(`${base}/`)).text();
+            const gate = await (await fetch(`${base}/gate1-market.html`)).text();
+            for (const [name, source, marker] of [
+              ['main page', page, 'CELLPINDA MORNING 7'],
+              ['main page science', page, '원료 후보를 검토하는 이유'],
+              ['market page', gate, '1단계 · 시장 조사'],
+              ['market page chart', gate, '리뷰 수와 100g당 가격 비교']
+            ]) if (!source.includes(marker)) failures.push(`${name}: missing ${marker}`);
+            if (failures.length) core.setFailed(`Public site monitoring failed:\n- ${failures.join('\n- ')}`);
+            else core.info(`Public site healthy: ${paths.length} resources and key content markers checked.`);
+
+      - name: Publish monitoring summary
+        if: always()
+        run: |
+          echo "## 공개사이트 반복 감리" >> "$GITHUB_STEP_SUMMARY"
+          echo "- 점검 주기: 15분" >> "$GITHUB_STEP_SUMMARY"
+          echo "- 점검 범위: 메인·시장조사·데이터·스크립트·검색 파일" >> "$GITHUB_STEP_SUMMARY"
+          echo "- 실패 시: GitHub Actions에서 수정 대상을 확인하고 다음 배포에서 보정" >> "$GITHUB_STEP_SUMMARY"
+
