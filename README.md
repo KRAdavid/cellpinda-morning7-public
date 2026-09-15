@@ -26,6 +26,8 @@
 
 페이지는 같은 JSON을 읽어 제품·영양·과학·역할·질문·게이트·근거 레지스트리를 표시합니다. 수치는 R&amp;D Target 또는 공개 관찰 표본으로 구분하며, 제조시험 전 확정값으로 표현하지 않습니다. 원료 연구는 셀핀다 완제품의 효능·권장량·소비기한을 대신하지 않습니다.
 
+`.github/workflows/public-site-monitor.yml`은 15분마다 공개 URL과 핵심 데이터·문구를 점검합니다. 오류가 발견되면 GitHub Actions에 수정 대상을 기록하고, 감리 결과를 확인한 뒤 다음 배포에서 보정합니다.
+
 ## 배포
 
 정적 파일 전체를 GitHub Pages 루트에 배포합니다. 별도 서버나 환경변수는 필요하지 않습니다. `.github/workflows/pages.yml`은 `main`에 push되면 GitHub Pages를 배포합니다.
