@@ -67,6 +67,9 @@
     </div>
   </main>
   <script src="./assets/gate1-market.js" defer></script>
+  <script>
+    (()=>{const titles={'시장 신호를':'시장 자료를 보고,','개발 후보로 바꿉니다.':'첫 제품을 정합니다.','첫 후보를 고른 세 가지 축':'첫 제품을 고른 기준','공개 시장 표본':'시장 표본','소비자의 다른 선택지':'소비자가 함께 비교하는 선택지','시장 선택의 의미':'이번 조사의 결론','자료의 한계':'자료를 해석할 때 주의할 점'};const fix=()=>document.querySelectorAll('h1,h2').forEach(el=>{let s=el.innerHTML;Object.entries(titles).forEach(([a,b])=>s=s.split(a).join(b));el.innerHTML=s});fix();new MutationObserver(fix).observe(document.body,{subtree:true,childList:true})})();
+  </script>
 </body>
 </html>
 
