@@ -7,3 +7,11 @@
 @media(max-width:900px){.gate-hero{display:block}.back-link{display:inline-block;margin-top:22px}.metric-grid{grid-template-columns:repeat(2,1fr)}.axis-grid,.gate-callout .candidate-grid{grid-template-columns:1fr}.limit-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.gate-main{padding:48px 0 70px}.gate-hero h1{font-size:46px}.gate-hero p{font-size:16px}.metric-grid{grid-template-columns:1fr 1fr}.metric{min-height:125px;padding:18px}.metric strong{font-size:25px;margin-top:13px}.gate-section{padding-top:58px}.gate-section-head{display:block}.gate-section-head h2{font-size:29px}.gate-section-head p{margin-top:13px}.gate-card{padding:18px}.limit-grid{grid-template-columns:1fr}.alternative-list .market-candidate{grid-template-columns:24px 1fr}.alternative-list .market-candidate span:last-child{grid-column:2}.gate-footer{display:block}.gate-footer span{display:block;margin-top:9px}}
 .manufacturer-orientation{display:grid;grid-template-columns:repeat(3,1fr);max-width:650px;margin-top:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.manufacturer-orientation div{padding:13px 14px 14px;border-right:1px solid var(--line)}.manufacturer-orientation div:last-child{border-right:0}.manufacturer-orientation small{display:block;color:var(--sage);font-size:9px;letter-spacing:.1em;margin-bottom:5px}.manufacturer-orientation strong{display:block;font-size:13px;font-weight:600;word-break:keep-all}@media(max-width:600px){.manufacturer-orientation{grid-template-columns:1fr}.manufacturer-orientation div{border-right:0;border-bottom:1px solid var(--line)}.manufacturer-orientation div:last-child{border-bottom:0}}
+ .science-intent{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:18px}
+ .science-intent div{padding:17px 16px;background:#fff}
+ .science-intent strong{display:block;color:var(--sage);font-size:14px;font-weight:600;margin-bottom:6px}
+ .science-intent span{display:block;color:var(--muted);font-size:12px;line-height:1.55;word-break:keep-all}
+ .science-note{margin:0 0 28px;color:var(--muted);font-size:12px;line-height:1.6;word-break:keep-all}
+ @media(max-width:720px){.science-intent{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:460px){.science-intent{grid-template-columns:1fr}}
+
